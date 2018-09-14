@@ -1,0 +1,19 @@
+public class Nursery{
+     public static void main(String[] args){
+            int N=99;
+            for(;N>2;N--)
+                 {
+                  System.out.println(N+"bottles of beer on the wall,"+N                              +"bottles of beer.");
+                  System.out.println("Take one down");
+                  System.out.println("Pass it around");
+                  System.out.println((N-1)+"bottles of beer on the wall,");  }
+
+            if(N==2)
+                 {
+                  System.out.println(N+"bottles of beer on the wall,"+N                              +"bottles of beer.");
+                  System.out.println("Take one down");
+                  System.out.println("Pass it around");
+                  System.out.println((N-1)+"bottle of beer on the wall,");  
+                  System.out.println("No more bottles of beer on the wall"); 
+       }
+}
