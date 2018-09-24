@@ -1,0 +1,84 @@
+package car;
+
+import java.util.Scanner;
+
+public class carr {
+	public String name;
+	public int tank;
+	public int oilc;
+	/*public carr(String s,int a,int b)      //车名，油箱容量（升），每公里耗油量（升/公里）
+	{
+		name=s;
+		tank=a;
+		oilc=b;
+	}*/
+	public int run()                       //一箱油可以跑多远
+	{
+		int c=tank*oilc;
+		return c;
+	}
+	public void input()                    //属性输入
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("输入车名");
+	    name=sc.nextLine();
+		System.out.println("请依次输入油箱容量（升）");
+		tank=sc.nextInt();
+		System.out.println("每公里耗油量（升/公里）");
+		oilc=sc.nextInt();
+	}
+	public void output()                   //属性输出
+	{
+		System.out.println("车名:"+name);
+		System.out.println("油箱容量（升）:"+tank);
+		System.out.println("每公里耗油量（升/公里）:"+oilc);
+		System.out.println("一箱油可以跑多远:"+run());
+	}
+	public static void main(String[] args) 
+	{
+		// TODO 自动生成的方法存根
+		carr[] t=new carr[3];
+		t[0]=new carr();//第一辆车属性创建
+		t[0].input();
+		t[1]=new carr();//第二辆车属性创建
+		t[1].input();
+		t[2]=new carr();//第三辆车属性创建
+		t[2].input();
+		//输出属性
+		t[0].output();
+		t[1].output();
+		t[2].output();
+	}
+
+}
+测试
+输入车名
+baoma
+请依次输入油箱容量（升）
+100
+每公里耗油量（升/公里）
+1
+输入车名
+benchi
+请依次输入油箱容量（升）
+200
+每公里耗油量（升/公里）
+2
+输入车名
+z
+请依次输入油箱容量（升）
+300
+每公里耗油量（升/公里）
+3
+车名:baoma
+油箱容量（升）:100
+每公里耗油量（升/公里）:1
+一箱油可以跑多远:100
+车名:benchi
+油箱容量（升）:200
+每公里耗油量（升/公里）:2
+一箱油可以跑多远:400
+车名:z
+油箱容量（升）:300
+每公里耗油量（升/公里）:3
+一箱油可以跑多远:900
