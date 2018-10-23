@@ -1,0 +1,77 @@
+//如果我们有一段会抛出异常的代码是在循环中，你应该在哪里捕获它
+
+测试1：
+public class text {
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根		
+		try {
+			for(int i=0;i<5;i++) {
+				String str="lili";
+				System.out.println(str+"年龄是：");
+				int age=Integer.parseInt("10L");
+				System.out.println(age);			
+				}
+			}catch(Exception e)	{
+				e.printStackTrace();
+				}
+	}
+}
+运行结果：
+lili年龄是：
+java.lang.NumberFormatException: For input string: "10L"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at company/company.text.main(text.java:31)
+ 
+ 
+测试2：
+public class text {
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		for(int i=0;i<5;i++) {
+			try {
+				String str="lili";
+				System.out.println(str+"年龄是：");
+				int age=Integer.parseInt("10L");
+				System.out.println(age);
+			}catch(Exception e)	{
+				e.printStackTrace();
+			}
+		}
+	}
+}
+运行结果：
+lili年龄是：
+java.lang.NumberFormatException: For input string: "10L"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at company/company.text.main(text.java:12)
+lili年龄是：
+java.lang.NumberFormatException: For input string: "10L"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at company/company.text.main(text.java:12)
+lili年龄是：
+java.lang.NumberFormatException: For input string: "10L"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at company/company.text.main(text.java:12)
+lili年龄是：
+java.lang.NumberFormatException: For input string: "10L"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at company/company.text.main(text.java:12)
+lili年龄是：
+java.lang.NumberFormatException: For input string: "10L"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at company/company.text.main(text.java:12)
+  
+  
+  总结：大部分情况应该使用第一种结构，如果有特殊情况在某一次出问题使用第二种结构
