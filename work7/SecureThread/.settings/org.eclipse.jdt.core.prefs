@@ -1,0 +1,11 @@
+1 eclipse.preferences.version=1 
+2 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled 
+3 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8 
+4 org.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve 
+5 org.eclipse.jdt.core.compiler.compliance=1.8 
+6 org.eclipse.jdt.core.compiler.debug.lineNumber=generate 
+7 org.eclipse.jdt.core.compiler.debug.localVariable=generate 
+8 org.eclipse.jdt.core.compiler.debug.sourceFile=generate 
+9 org.eclipse.jdt.core.compiler.problem.assertIdentifier=error 
+10 org.eclipse.jdt.core.compiler.problem.enumIdentifier=error 
+11 org.eclipse.jdt.core.compiler.source=1.8 
